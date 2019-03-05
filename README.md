@@ -1,10 +1,5 @@
-# ProPresenter 6 - Stage Display Message Sender Client
-A tool to send stage display messages to ProPresenter6.  
-
-Click [here](http://featherbear.au.eu.org/pp6sdm/) to access the interface
-
-<!--Not using this version because GitHub Pages enforces HTTPS, which means that we can't connect to the insecure WebSocket server that ProPresenter 6 serves-->
-<!--Click [here](https://featherbear.github.io/propresenter-stagemessages) to access the interface-->
+# ProPresenter 6 - Stage Output Message Sender Client
+A quick (and lazy) demo of a tool to send stage messages to ProPresenter6 output.  
 
 # Instructions
 ## Enable Remote Operation
@@ -12,6 +7,10 @@ Click [here](http://featherbear.au.eu.org/pp6sdm/) to access the interface
 * Tick "Enable ProPresenter Remote"
 * Tick "Controller"
 * Type in a password
+
+## Setup the first message in ProPresenter with the 'Message' Token
+* This client is configured to display the FIRST message in ProPresenter and any text that is type will be used for the message token "Message"
+* Setup the first message in ProPresenter to use the message token "Message" in its Message Text.  Format it how you like.
 
 ## Configure the Client
 * Press the `Settings` button (top right of screen)
@@ -21,6 +20,6 @@ Click [here](http://featherbear.au.eu.org/pp6sdm/) to access the interface
 * Press save
 
 # Legal
-* Project based off [jeffmikels/ProPresenter-API](https://github.com/jeffmikels/ProPresenter-API/)
+* Project based off [featherbear/propresenter-stagemessages](https://github.com/featherbear/propresenter-stagemessages)
 * ProPresenter by Renewed Vision LLC
 
