@@ -1,5 +1,5 @@
 # ProPresenter 6 - Main Output, Message Sender Client
-A quick (and lazy) demo of a tool to send messages to ProPresenter6 main output.  Basically took featherbears work with stage display messages and quckly changed the commands sent to ProPresenter to display output screen messages instead.  
+A quick (and lazy) demo of a tool to send messages to ProPresenter6 main output.  I basically took featherbears hard-work with stage display messages and quckly changed the commands sent to ProPresenter to display output screen messages instead.  (Thanks featherbear!!!)
 
 # Instructions
 ## Enable Remote Operation
