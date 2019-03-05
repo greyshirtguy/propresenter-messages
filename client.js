@@ -67,16 +67,19 @@ function listen() {
     }
 }
 
-function stageMessageSend(msg) {
+function messageSend(msg) {
     emit({
-        action: 'stageDisplaySendMessage',
-        stageDisplayMessage: msg
+        action: 'messageSend',
+        messageIndex: 0,
+		messageKeys: ['Message'],
+		messageValues: [msg]
     })
 }
 
-function stageMessageHide() {
+function messageHide() {
     emit({
-        action: 'stageDisplayHideMessage'
+        action: 'messageHide',
+		messageIndex: 0
     })
 }
 
