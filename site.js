@@ -45,7 +45,7 @@ elem("message").addEventListener("keyup", function(event) {
 elem("send").addEventListener("click", function() {
     let message;
     if (!(message = elem("message").value.trim())) return false;
-    stageMessageSend(message);
+    messageSend(message);
     
     clearTimeout(shakeLoop)
     elem("send").className="shake";
@@ -54,13 +54,13 @@ elem("send").addEventListener("click", function() {
 
     var oldMessage = elem("currentMessage");
     var newMessage = oldMessage.cloneNode(true);
-    newMessage.innerText = message;
+    newMessage.innerText = 'Message 0 displayed.\nMessage Token = "' + message +'"';
     newMessage.className = "blink";
     oldMessage.parentNode.replaceChild(newMessage, oldMessage);
 
 })
 elem("clear").addEventListener("click", function() {
-    stageMessageHide();
+    messageHide();
     elem("currentMessage").innerText = " ";
     elem("currentMessage").className = "";
 })
